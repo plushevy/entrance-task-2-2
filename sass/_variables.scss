@@ -1,0 +1,24 @@
+// resolution
+$mobile-widths-only: "(max-width: 767px)";
+$tablet-widths: "(min-width: 768px)";
+$desktop-widths: "(min-width: 1150px)";
+$retina: "(min-resolution: 144dpi)",
+"(min-resolution: 1.5dppx)";
+// calc-paddings
+$calc-mobile: calc((100% - 335px) / 2);
+// $calc-tablet: calc((100% - 668px) / 2);
+// $calc-desktop: calc((100% - 1050px) / 2);
+// colors
+$font-color: #333;
+$font-color-light: #858585;
+$line-color: #F0F0F0;
+$link-color: #000000;
+$link-color-hover: #8d8d8d;
+$link-color-visited: #cacaca;
+// main font
+$font-base: 400 14px/16px Arial,
+sans-serif;
+$font-light: 300 14px/16px Arial,
+sans-serif;
+$font-bold: 700 14px/16px Arial,
+sans-serif;

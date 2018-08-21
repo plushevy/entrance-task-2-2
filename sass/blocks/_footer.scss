@@ -1,0 +1,17 @@
+.page-footer {
+  &__wrapper {
+    @include container;
+  }
+}
+
+@media #{$tablet-widths} {
+  .page-footer {
+    &__wrapper {}
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-footer {
+    &__wrapper {}
+  }
+}
