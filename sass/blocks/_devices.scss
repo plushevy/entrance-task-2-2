@@ -1,3 +1,11 @@
 .scripts {
   grid-area: devices;
 }
+
+@media #{$tablet-widths} {
+  .scripts {
+    grid-column: span 2 / auto;
+  }
+}
+
+@media #{$desktop-widths} {}

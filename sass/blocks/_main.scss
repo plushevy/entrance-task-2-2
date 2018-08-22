@@ -7,11 +7,30 @@
     "home"
     "scripts"
     "devices";
-    grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+    // grid-template-rows: repeat(4, 1fr);
   }
 }
 
 .main__wrapper>section {
   outline: 2px solid red;
+}
+
+
+@media #{$tablet-widths} {
+.main {
+  &__wrapper {
+     grid-template-columns: repeat(2, 1fr);
+    // grid-template-areas:
+    // "home" "scripts"
+    // "devices";
+    // grid-template-columns: 100%;
+    // grid-template-rows: repeat(2, 1fr);
+  }
+}
+}
+
+@media #{$desktop-widths} {
+
 }
