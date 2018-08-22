@@ -24,6 +24,37 @@
       <section class="section home">
         <h2 class="home__title">Главное</h2>
 
+        <div class="home__hello hello">
+          <h3 class="hello__title">Привет, Геннадий!</h3>
+          <div class="hello__text">Двери и окна закрыты, сигнализация включена.</div>
+          <ul class="hello__weather">
+
+            <li class="hello__weather-block">
+              <div class="hello__caption">Дома</div>
+              <div class="hello__temperature">+23</div>
+            </li>
+
+            <li class="hello__weather-block">
+              <div class="hello__caption">За окном</div>
+              <div class="hello__temperature">+19
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/cloud-drizzle.png 1x, cloud-drizzle@2x.png 2x">
+                  <!-- <source media="(min-width: 768px)" srcset="img/cloud-drizzle@1x.png 1x, cloud-drizzle@2x.png 2x"> -->
+                  <img src="img/cloud-drizzle.svg" alt="Погода за окном" class="hello__weather-img" width="18">
+                </picture>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="home__widgets">
+          <ul class="widgets">
+            <li class="widgets__item"></li>
+            <li class="widgets__item"></li>
+          </ul>
+        </div>
+
       </section>
 
       <section class="section scripts">

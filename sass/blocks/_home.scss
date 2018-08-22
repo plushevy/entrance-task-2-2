@@ -1,0 +1,68 @@
+.home {
+  grid-area: home;
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0;
+  padding: 20px;
+  padding-bottom: 140px;
+  background: #eee url(/img/bg@1x.png) no-repeat center;
+  background-size: auto 100%;
+  border-radius: $theme-radius;
+  &__title {
+    // font: $font-bold;
+    // font-size: 16px;
+    display: none;
+  }
+  &__hello {}
+  &__widgets {}
+}
+
+.hello {
+  &__title {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 5px 0;
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &__weather {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__weather-block {
+    margin-right: 18px;
+  }
+  &__caption {
+    font-size: 12px;
+    line-height: 14px;
+    color: $font-color-grey;
+    margin-bottom: 5px;
+  }
+  &__temperature {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+  }
+  &__weather-img {
+    display: inline;
+  }
+}
+
+.widgets {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &__item {
+    min-height: 120px;
+    min-width: 200px;
+    margin-right: 20px;
+    border-radius: $theme-radius;
+    background-color: #fff;
+  }
+}

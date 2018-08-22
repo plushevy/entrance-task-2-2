@@ -30,14 +30,14 @@ ul li {
 a {
   text-decoration: none;
   outline: none;
-  color: $link-color;
+  color: $font-color-grey;
   &:hover {
-    color: $link-color-hover;
+    color: $font-color;
     text-decoration: none;
     cursor: pointer;
   }
   &:active {
-    color: $link-color-visited;
+    color: $font-color;
   }
 }
 

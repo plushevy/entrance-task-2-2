@@ -10,11 +10,11 @@ $calc-mobile: calc((100% - 335px) / 2);
 // $calc-desktop: calc((100% - 1050px) / 2);
 // colors
 $font-color: #333;
-$font-color-light: #858585;
+$font-color-grey: #858585;
 $line-color: #F0F0F0;
-$link-color: #000000;
-$link-color-hover: #8d8d8d;
-$link-color-visited: #cacaca;
+// $link-color: #000000;
+// $link-color-hover: #8d8d8d;
+// $link-color-visited: #cacaca;
 // main font
 $font-base: 400 14px/16px Arial,
 sans-serif;
@@ -22,3 +22,5 @@ $font-light: 300 14px/16px Arial,
 sans-serif;
 $font-bold: 700 14px/16px Arial,
 sans-serif;
+//vars
+$theme-radius: 10px;

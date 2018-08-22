@@ -176,13 +176,13 @@ gulp.task('serve', function () {
   // от креша после сохраниения в scss
   gulp.watch(config.src + config.style.watch, function () {
     setTimeout(function () {
-      gulp.start('style', 'html');
+      gulp.start('style', 'style', 'html');
     }, 1000);
   });
   gulp.watch(config.src + config.html.src, ['html']);
   gulp.watch(config.src + config.templates.src, ['html']);
   gulp.watch(config.src + config.js.src, ['js']);
-  // gulp.watch(config.src + config.img.src, ['copy']);
+  gulp.watch(config.src + config.img.src, ['copy']);
 
 });
 
