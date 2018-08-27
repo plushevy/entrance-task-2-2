@@ -65,7 +65,7 @@ var config = {
     dest: '/img/'
   },
   svgsprite: {
-    src: '/img/icons/icon-*.svg', // svg для спрайта
+    src: '/img/Icons/icon_*.svg', // svg для спрайта
     dest: '/img/'
   }
 };

@@ -1,23 +1,26 @@
 .home {
   grid-area: home;
-  position: relative;
-  overflow: hidden;
-  margin: 10px 0;
-  padding: 20px;
-  padding-bottom: 140px;
-  background: #eee url(/img/bg@1x.png) no-repeat center;
-  background-size: auto 100%;
-  border-radius: $theme-radius;
+
+  // margin: 10px 0;
+
   &__title {
     // font: $font-bold;
     // font-size: 16px;
     display: none;
   }
   &__hello {}
-  &__widgets {}
 }
 
 .hello {
+
+  padding: 20px;
+  padding-bottom: 140px;
+  background: #eee url(/img/bg@1x.png) no-repeat center;
+  background-size: cover;
+  border-radius: $theme-radius;
+  position: relative;
+  overflow: hidden;
+
   &__title {
     font-size: 18px;
     line-height: 20px;
@@ -54,15 +57,55 @@
 }
 
 .widgets {
-  position: absolute;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  position: relative;
+
+  &__list {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   &__item {
+    width: 200px;
     min-height: 120px;
-    min-width: 200px;
+    flex-shrink: 0;
+
+    padding: 15px;
     margin-right: 20px;
     border-radius: $theme-radius;
     background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  &__img {
+    margin-bottom: auto;
+  }
+  &__name {
+    margin-bottom: 5px;
+  }
+  &__text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: $font-color-grey;
+
+  }
+}
+
+
+@media #{$tablet-widths} {
+  .home {
+    &__title {
+      display: block;
+      font-size: 18px;
+      line-height: 21px;
+      margin: 20px 0;
+    }
+    &__hello {}
   }
 }

@@ -11,4 +11,60 @@ $(function () {
 
   });
 
+  var posX1;
+  var posX2;
+  var swipeSide;
+
+  $(".widgets__list").on("touchstart", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    posX1 = e.originalEvent.changedTouches[0].pageX;
+  });
+
+  $(".widgets__list").on("touchend", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    posX2 = e.originalEvent.changedTouches[0].pageX;
+    swipeSide = posX2 - posX1;
+
+    if (swipeSide > 20) {
+      tapHandlerLeft();
+      console.log('tapHandlerLeft');
+      console.log(e);
+      console.log('posX2' + posX2);
+
+    } else if (swipeSide < -20) {
+      tapHandlerRight();
+      console.log('tapHandlerRight');
+      console.log(e);
+      console.log('posX2' + posX2);
+    }
+
+  });
+
+  function tapHandlerLeft() {
+    var wrapWidth = $('.widgets__list').innerWidth();
+    var offset = $('.widgets__list').offset();
+    console.log(offset);
+    var slide = $('.widgets__item');
+    var width = slide.innerWidth();
+    $('.widgets__list').animate({
+      marginLeft: "+=" + width
+    }, 300)
+  }
+
+
+  function tapHandlerRight() {
+    var wrapWidth = $('.widgets__list').innerWidth();
+    var offset = $('.widgets__list').offset();
+    console.log(offset);
+    var slide = $('.widgets__item');
+    var width = slide.innerWidth();
+    $('.widgets__list').animate({
+      marginLeft: "-=" + width
+    }, 300)
+  }
+
+
+
 });
