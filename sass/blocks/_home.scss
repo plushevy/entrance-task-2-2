@@ -18,7 +18,7 @@
   background: #eee url(/img/bg@1x.png) no-repeat center;
   background-size: cover;
   border-radius: $theme-radius;
-  position: relative;
+  // position: relative;
   overflow: hidden;
 
   &__title {
@@ -57,10 +57,10 @@
 }
 
 .widgets {
-  position: relative;
+  // position: relative;
 
   &__list {
-    position: absolute;
+    // position: absolute;
     display: flex;
     justify-content: flex-start;
     align-items: center;

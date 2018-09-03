@@ -11,6 +11,33 @@ $(function () {
 
   });
 
+  $(document).on('click', '.widgets__item', function (e) {
+    $(this).css({
+      'position': 'absolute',
+      'left':'50%',
+      'top': '50%',
+      'marginLeft': '-50%',
+      'marginTop:': '-50%',
+      'transform': 'scale(1.2)',
+      'z-index' : '100'
+    });
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   var posX1;
   var posX2;
   var swipeSide;
